@@ -42,6 +42,7 @@
   </header>
 
   <main>
+    <!-- HOME / ESSENCE -->
     <section id="home" class="panel active" aria-labelledby="home-title">
       <div class="hero">
         <p class="eyebrow">Revival Of Wisdom · Volume 1 map</p>
@@ -57,7 +58,9 @@
           <a class="btn outline" href="#seed">Seed video deep-dive</a>
         </div>
       </div>
+
       <div class="stat-grid" id="statGrid"></div>
+
       <div class="card-grid two">
         <article class="card">
           <h3>Core worldview</h3>
@@ -68,9 +71,11 @@
           <ul class="cluster-list" id="clusterList"></ul>
         </article>
       </div>
+
       <article class="card channel-card" id="channelCard"></article>
     </section>
 
+    <!-- CHAPTERS -->
     <section id="chapters" class="panel" aria-labelledby="chapters-title">
       <header class="panel-head">
         <h2 id="chapters-title">Chapter explorer</h2>
@@ -78,7 +83,9 @@
       </header>
       <div class="toolbar">
         <input type="search" id="chapterSearch" placeholder="Search title, summary, cluster…" aria-label="Search chapters" />
-        <select id="clusterFilter" aria-label="Filter by cluster"><option value="">All clusters</option></select>
+        <select id="clusterFilter" aria-label="Filter by cluster">
+          <option value="">All clusters</option>
+        </select>
         <select id="confidenceFilter" aria-label="Filter by confidence">
           <option value="">All confidence</option>
           <option value="high">High</option>
@@ -95,6 +102,7 @@
       </dialog>
     </section>
 
+    <!-- THEMES -->
     <section id="themes" class="panel" aria-labelledby="themes-title">
       <header class="panel-head">
         <h2 id="themes-title">Theme hubs</h2>
@@ -109,13 +117,17 @@
       </dialog>
     </section>
 
+    <!-- VIDEOS -->
     <section id="videos" class="panel" aria-labelledby="videos-title">
       <header class="panel-head">
         <h2 id="videos-title">Video sources</h2>
         <p>Official samples + Positive Vortex page-walk series. Filter for videos that show book pages on screen.</p>
       </header>
       <div class="toolbar">
-        <label class="toggle"><input type="checkbox" id="pagesOnly" checked /><span>Shows book pages only</span></label>
+        <label class="toggle">
+          <input type="checkbox" id="pagesOnly" checked />
+          <span>Shows book pages only</span>
+        </label>
         <select id="videoSource" aria-label="Video source">
           <option value="all">All sources</option>
           <option value="official">Official channel</option>
@@ -127,6 +139,7 @@
       <div class="video-list" id="videoList"></div>
     </section>
 
+    <!-- SYMBOLS -->
     <section id="symbols" class="panel" aria-labelledby="symbols-title">
       <header class="panel-head">
         <h2 id="symbols-title">Symbol lexicon</h2>
@@ -135,6 +148,7 @@
       <div class="symbol-grid" id="symbolGrid"></div>
     </section>
 
+    <!-- SEED DEEP-DIVE -->
     <section id="seed" class="panel" aria-labelledby="seed-title">
       <header class="panel-head">
         <h2 id="seed-title">Seed video deep-dive</h2>
