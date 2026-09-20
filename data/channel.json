@@ -1,0 +1,65 @@
+{
+  "channel_name": "Revival Of Wisdom",
+  "handle": "@revivalofwisdom",
+  "channel_id": "UCn2p-RrzfPYSTiDdAPEaRSQ",
+  "channel_url": "https://www.youtube.com/@revivalofwisdom",
+  "channel_url_alt": "https://www.youtube.com/channel/UCn2p-RrzfPYSTiDdAPEaRSQ",
+  "approx_subscribers": 274000,
+  "author": "Harry B. Joseph (Harry Blaine Joseph)",
+  "author_sites": [
+    "https://revivalofwisdom.com/",
+    "https://revivalofwisdom.org/",
+    "https://harrybjoseph.com/",
+    "https://bookofwisdom.net/",
+    "https://www.ethereal-university.com/"
+  ],
+  "books": [
+    {
+      "title": "Book of Wisdom Volume 1",
+      "formats": [
+        "Paperback",
+        "PDF/Kindle"
+      ],
+      "approx_pages": "118\u2013119 (public listings)",
+      "official_store": "https://revivalofwisdom.com/",
+      "amazon_examples": [
+        "https://www.amazon.com/Book-Wisdom-Harry-B-Joseph-ebook/dp/B0DPJN3XJK",
+        "https://www.amazon.com.au/Wisdom-Volime-HARRY-BLAINE-JOSEPH/dp/B0GC4PHJQ5"
+      ],
+      "lulu_example": "https://www.lulu.com/shop/harry-joseph/book-of-wisdom-volume-i/paperback/product-yv9rvw4.html",
+      "notes": "Also sold as 'Book of Wisdom Paperback - English' and 'Book Of Wisdom PDF' on revivalofwisdom.com. Bundles with Symbolism / Volume 2 available."
+    },
+    {
+      "title": "Book of Wisdom Volume 2",
+      "formats": [
+        "Paperback",
+        "Hardcover",
+        "ebook listings"
+      ],
+      "official_store": "https://revivalofwisdom.com/products/book-of-wisdom-volume-2-paperback",
+      "notes": "Separate volume; Positive Vortex page-walk series primarily maps Volume 1 (~119 short sections)."
+    },
+    {
+      "title": "Book of Symbolism",
+      "formats": [
+        "Paperback",
+        "PDF"
+      ],
+      "official_store": "https://revivalofwisdom.com/",
+      "related_site": "https://bookofsymbolism.com"
+    }
+  ],
+  "related_fan_series": {
+    "name": "Positive Vortex \u2014 Unlock the Secret: The Book of Wisdom",
+    "playlist": "https://www.youtube.com/playlist?list=PL0QNmo3JtrQiCv0rT3nWh2x5tmqzm4nDk",
+    "parts": 45,
+    "role": "Primary public chapter-by-chapter inventory with book pages shown on screen"
+  },
+  "seed_video": {
+    "url": "https://youtu.be/Gnf5ZGXl_g4",
+    "title": "Saving Your \"Seed\" Can Give You POWER",
+    "upload_date_pt": "2025-09-08",
+    "views_approx": 486463
+  },
+  "focus": "Ancient symbolism, astrotheology, consciousness, occult psychology, sacred geometry; promotes Ethereal University."
+}

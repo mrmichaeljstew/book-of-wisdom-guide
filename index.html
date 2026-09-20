@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Book of Wisdom Study Guide — interactive chapter map, themes, and video sources from public YouTube content. Not a reprint. Support the author at revivalofwisdom.com." />
+  <title>Book of Wisdom — Study Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+
+  <aside class="disclaimer" role="note">
+    <p>
+      <strong>Study guide only</strong> — synthesized from public YouTube narration and page-display videos.
+      This is <em>not</em> a reprint of <cite>Book of Wisdom</cite>.
+      For the full text, diagrams, and art, purchase from the author:
+      <a href="https://revivalofwisdom.com/" target="_blank" rel="noopener">revivalofwisdom.com</a>
+    </p>
+  </aside>
+
+  <header class="site-header">
+    <div class="brand">
+      <span class="sigil" aria-hidden="true">☉</span>
+      <div>
+        <h1>Book of Wisdom</h1>
+        <p class="tagline">Interactive Study Guide · Harry B. Joseph</p>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="#home" data-section="home" class="active">Essence</a>
+      <a href="#chapters" data-section="chapters">Chapters</a>
+      <a href="#themes" data-section="themes">Themes</a>
+      <a href="#videos" data-section="videos">Videos</a>
+      <a href="#symbols" data-section="symbols">Symbols</a>
+      <a href="#seed" data-section="seed">Seed Deep-Dive</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME / ESSENCE -->
+    <section id="home" class="panel active" aria-labelledby="home-title">
+      <div class="hero">
+        <p class="eyebrow">Revival Of Wisdom · Volume 1 map</p>
+        <h2 id="home-title">A syncretic “holy science” of consciousness</h2>
+        <p class="lede">
+          Biblical stories, Egyptian symbols, Freemasonry, kundalini, Kabbalah, astrology, and electromagnetism
+          treated as <strong>one codebook</strong> about mind, light, and the body — especially the conserved
+          “Christ oil” / sacred secretion rising the spine.
+        </p>
+        <div class="cta-row">
+          <a class="btn gold" href="#chapters">Explore chapters</a>
+          <a class="btn outline" href="https://revivalofwisdom.com/" target="_blank" rel="noopener">Buy the book</a>
+          <a class="btn outline" href="#seed">Seed video deep-dive</a>
+        </div>
+      </div>
+
+      <div class="stat-grid" id="statGrid"></div>
+
+      <div class="card-grid two">
+        <article class="card">
+          <h3>Core worldview</h3>
+          <ol class="claim-list" id="claimsList"></ol>
+        </article>
+        <article class="card">
+          <h3>Chapter clusters</h3>
+          <ul class="cluster-list" id="clusterList"></ul>
+        </article>
+      </div>
+
+      <article class="card channel-card" id="channelCard"></article>
+    </section>
+
+    <!-- CHAPTERS -->
+    <section id="chapters" class="panel" aria-labelledby="chapters-title">
+      <header class="panel-head">
+        <h2 id="chapters-title">Chapter explorer</h2>
+        <p>All mapped Volume 1 sections (~119). Summaries only — not book text.</p>
+      </header>
+      <div class="toolbar">
+        <input type="search" id="chapterSearch" placeholder="Search title, summary, cluster…" aria-label="Search chapters" />
+        <select id="clusterFilter" aria-label="Filter by cluster">
+          <option value="">All clusters</option>
+        </select>
+        <select id="confidenceFilter" aria-label="Filter by confidence">
+          <option value="">All confidence</option>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+        </select>
+      </div>
+      <p class="result-meta" id="chapterMeta"></p>
+      <div class="chapter-list" id="chapterList"></div>
+      <dialog id="chapterModal" class="modal">
+        <form method="dialog" class="modal-inner">
+          <button type="submit" class="modal-close" aria-label="Close">×</button>
+          <div id="chapterModalBody"></div>
+        </form>
+      </dialog>
+    </section>
+
+    <!-- THEMES -->
+    <section id="themes" class="panel" aria-labelledby="themes-title">
+      <header class="panel-head">
+        <h2 id="themes-title">Theme hubs</h2>
+        <p>Cross-cutting ideas linking related chapters.</p>
+      </header>
+      <div class="theme-grid" id="themeGrid"></div>
+      <dialog id="themeModal" class="modal">
+        <form method="dialog" class="modal-inner">
+          <button type="submit" class="modal-close" aria-label="Close">×</button>
+          <div id="themeModalBody"></div>
+        </form>
+      </dialog>
+    </section>
+
+    <!-- VIDEOS -->
+    <section id="videos" class="panel" aria-labelledby="videos-title">
+      <header class="panel-head">
+        <h2 id="videos-title">Video sources</h2>
+        <p>Official samples + Positive Vortex page-walk series. Filter for videos that show book pages on screen.</p>
+      </header>
+      <div class="toolbar">
+        <label class="toggle">
+          <input type="checkbox" id="pagesOnly" checked />
+          <span>Shows book pages only</span>
+        </label>
+        <select id="videoSource" aria-label="Video source">
+          <option value="all">All sources</option>
+          <option value="official">Official channel</option>
+          <option value="series">Positive Vortex series</option>
+        </select>
+        <input type="search" id="videoSearch" placeholder="Search videos…" aria-label="Search videos" />
+      </div>
+      <p class="result-meta" id="videoMeta"></p>
+      <div class="video-list" id="videoList"></div>
+    </section>
+
+    <!-- SYMBOLS -->
+    <section id="symbols" class="panel" aria-labelledby="symbols-title">
+      <header class="panel-head">
+        <h2 id="symbols-title">Symbol lexicon</h2>
+        <p>Recurring emblems from the study corpus (labels for study, not artwork reproductions).</p>
+      </header>
+      <div class="symbol-grid" id="symbolGrid"></div>
+    </section>
+
+    <!-- SEED DEEP-DIVE -->
+    <section id="seed" class="panel" aria-labelledby="seed-title">
+      <header class="panel-head">
+        <h2 id="seed-title">Seed video deep-dive</h2>
+        <p>Chapters 115–116 · <em>Saving Your “Seed” Can Give You POWER</em></p>
+      </header>
+      <div class="seed-layout" id="seedLayout"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Study guide from public video content · Not affiliated with or endorsed as an official product of the author ·
+      Support Harry B. Joseph at <a href="https://revivalofwisdom.com/" target="_blank" rel="noopener">revivalofwisdom.com</a>
+    </p>
+    <p class="fine">GitHub Pages · mrmichaeljstew · Book of Wisdom Study Guide</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
